@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Wymiana koła — instrukcja (pełne formatowanie)</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+      background: #ffffff;
+      color: #111;
+      padding: 24px;
+    }
+    h1 { font-family: Georgia, 'Times New Roman', serif; font-size: 32px; color: #0b5fd7; margin-bottom: 6px; }
+    h2 { font-family: 'Calibri', sans-serif; font-size: 22px; color: #0b8a3e; margin-top:18px; }
+    hr.separator { border: none; height: 2px; background:#ddd; margin: 16px 0; }
+
+    /* lista kwadratowa */
+    ul.square {
+      list-style-type: square;
+      padding-left: 28px;
+      margin: 8px 0 16px 0;
+    }
+
+    /* numerowana A, B, C */
+    ol.alpha {
+      list-style-type: upper-alpha;
+      padding-left: 28px;
+      margin: 8px 0 16px 0;
+    }
+
+    /* definicja */
+    dl { margin: 8px 0 16px 0; }
+    dt { font-weight:700; margin-top:8px; }
+    dd { margin-left:18px; margin-bottom:6px; }
+
+    /* tabela 70% szerokości, wyśrodkowana na stronie */
+    .instr-table {
+      width: 70%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      margin-bottom: 20px;
+    }
+    .instr-table th, .instr-table td {
+      border: 1px solid #bbb;
+      padding: 10px;
+      text-align: center; /* wyrównanie do środka */
+      vertical-align: middle;
+    }
+    .instr-table thead th {
+      background: #f0c040; /* pierwszy wiersz wypełniony kolorem */
+      color: #111;
+      font-weight: 700;
+    }
+    /* scalone komórki -- wygląd */
+  </style>
+</head>
+<body>
+
+  <h1>Wymiana koła</h1>
+
+  <p style="font-size:16px;">
+    <b>Krótko:</b> jeśli złapałeś gumę, zachowaj spokój. Ta instrukcja pokaże <i>krok po kroku</i> jak bezpiecznie
+    wymienić koło — od przygotowania po odjazd. <u>Nie panikuj</u>, działaj metodycznie.
+  </p>
+
+  <hr class="separator">
+
+  <h2>1. Przygotowanie</h2>
+  <p style="font-size:15px; line-height:1.4;">
+    Wyłącz silnik, zaciągnij hamulec ręczny i włącz światła awaryjne.<br>
+    Wyjmij z bagażnika: klucz do kół, lewarek, kliny, zapasowe koło i instrukcję samochodu.
+  </p>
+
+  <h2>2. Kolejne kroki (lista punktowana — kwadraty)</h2>
+  <ul class="square">
+    <li><b>Bezpieczeństwo</b> — postaw kliny pod kołami, by samochód się nie stoczył.</li>
+    <li><i>Poluzuj śruby</i> (przed podniesieniem) — luzuj je <b>o ok. 1/4 obrotu</b>.</li>
+    <li>Podnieś samochód lewarkiem w punkcie podparcia określonym w instrukcji.</li>
+    <li>Odkręć śruby i zdejmij koło.</li>
+    <li>Załóż zapasowe koło i dokręć śruby ręcznie, opuść samochód i dopiero potem dokręć kluczem krzyżowym.</li>
+  </ul>
+
+  <h2>3. Plan działania (lista numerowana A, B, C...)</h2>
+  <ol class="alpha">
+    <li><b>A</b>. Oceń uszkodzenie koła — jeśli felga jest poważnie uszkodzona, jedź powoli do warsztatu.</li>
+    <li><b>B</b>. Sprawdź ciśnienie w kole zapasowym po kilku kilometrach.</li>
+    <li><b>C</b>. Zgłoś awarię jeśli potrzebujesz pomocy drogowej (użyj aplikacji lub numerów alarmowych).</li>
+  </ol>
+
+  <h2>4. Słownik pojęć (lista definicji)</h2>
+  <dl>
+    <dt>Lewarek</dt>
+    <dd>Narzędzie służące do podnoszenia samochodu w celu wymiany koła.</dd>
+
+    <dt>Koło zapasowe (dojazdowe)</dt>
+    <dd>Mniejsze, tymczasowe koło przeznaczone do jazdy na krótkim dystansie z ograniczoną prędkością.</dd>
+
+    <dt>Kliny</dt>
+    <dd>Małe elementy zakładane za koła, zapobiegające stoczeniu pojazdu.</dd>
+  </dl>
+
+  <hr class="separator">
+
+  <h2>5. Tabela kontroli — narzędzia i czynności</h2>
+
+  <!-- Tabela: 4 kolumny x 5 wierszy (plus header). Scalone komórki: pierwsza kolumna pierwsze 2 wiersze - rowspan, ostatni wiersz: colspan 2 -->
+  <table class="instr-table" aria-label="Tabela wymiana koła">
+    <thead>
+      <tr>
+        <th>Etap</th>
+        <th>Narzędzia</th>
+        <th>Czynność</th>
+        <th>Uwagi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!-- scalona pionowo: 'Przygotowanie' obejmuje dwa wiersze -->
+        <td rowspan="2">Przygotowanie</td>
+        <td>Klucz do kół, kliny</td>
+        <td>Ustaw auto bezpiecznie, zaciągnij hamulec</td>
+        <td>Wybierz miejsce z poboczem/parkingiem</td>
+      </tr>
+      <tr>
+        <!-- kontynuacja w drugim wierszu tej sekcji -->
+        <td>Lewarek</td>
+        <td>Sprawdź punkt podparcia</td>
+        <td>Upewnij się, że podłoże jest stabilne</td>
+      </tr>
+
+      <tr>
+        <td>Demontaż</td>
+        <td>Klucz do kół, rękawiczki</td>
+        <td>Poluzuj śruby, podnieś auto, zdejmij koło</td>
+        <td>Poluzuj śruby zanim podniesiesz auto</td>
+      </tr>
+
+      <tr>
+        <td>Montowanie</td>
+        <td>Zapasowe koło, klucz krzyżowy</td>
+        <td>Załóż koło, dokręć ręcznie</td>
+        <td>Po opuszczeniu auta dokręć wszystkie śruby</td>
+      </tr>
+
+      <tr>
+        <!-- ostatni wiersz: scalone poziomo w dwóch pierwszych komórkach, reszta normalna -->
+        <td colspan="2">Kontrola końcowa</td>
+        <td>Sprawdź ciśnienie i dokręcenie</td>
+        <td>Przejedź kilka km i ponownie sprawdź moment dokręcenia</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr class="separator">
+
+  <h2>6. Krótkie przypomnienia (formaty czcionek i indeksy)</h2>
+  <p style="font-size:15px; color:#333;">
+    Możesz użyć <b>pogrubienia</b>, <i>pochylenia</i> i <u>podkreślenia</u>, aby podkreślić ważne kroki.<br>
+    Przykład: <span style="font-family:'Courier New', monospace; font-size:14px; color:#0066aa;">moment dokręcenia = 110 <sup>N·m</sup></span>
+    (gdzie <sub>m</sub> oznacza metr w zapisie jednostek).
+  </p>
+
+  <hr class="separator">
+
+  <h2>7. Materiały pomocnicze — linki</h2>
+  <p style="font-size:15px;">
+    - Tutoriale wideo (wyszukiwanie): 
+    <a href="https://www.youtube.com/results?search_query=wymiana+ko%C5%82a" target="_blank" rel="noopener noreferrer">
+      YouTube — wymiana koła
+    </a>
+    <br>
+    - Instrukcja serwisowa / artykuły techniczne (ogólne): 
+    <a href="https://pl.wikipedia.org/wiki/Ko%C5%82o" target="_blank" rel="noopener noreferrer">
+      Wikipedia — koło (informacje ogólne)
+    </a>
+    <br>
+    - Przydatny artykuł krok-po-kroku (przykładowy): 
+    <a href="https://example.com/materialy-wymiana-kola" target="_blank" rel="noopener noreferrer">
+      Materiały pomocnicze — wymiana koła (zamień na źródło lokalne)
+    </a>
+  </p>
+
+  <hr class="separator">
+
+  <p style="font-size:13px; color:#666;">
+    Ten dokument zawiera: nagłówki, paragrafy, łamanie linii, <b>pogrubienie</b>, <i>pochylenie</i>, <u>podkreślenie</u>,
+    <sup>indeks górny</sup>, <sub>indeks dolny</sub>, listę punktowaną (kwadrat), listę numerowaną (A, B, C...),
+    listę definicji i tabelę z wymaganym formatowaniem (70% szerokości, pierwszy wiersz kolor, wyrównanie do środka, scalone komórki).
+  </p>
+
+</body>
+</html>
