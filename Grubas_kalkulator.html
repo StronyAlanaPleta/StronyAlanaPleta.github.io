@@ -1,0 +1,55 @@
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=ISO-8859-2" />  
+  <title>[ Tytul dokumentu ]</title>
+</head>
+<body>
+<script language="JavaScript">
+
+function bmi() {
+/* OdwoĹanie do formularza i jego elementĂłw przez nazwÄ*/
+var skl1=parseFloat(document.forms[0].elements[0].value);
+var skl2=parseFloat(document.forms[0].elements[1].value);
+if(skl1==0) {alert("epsteni cie wydidluje")}
+else {
+var wynik = skl2/skl1;
+var wynik = wynik/skl1;
+var wynik = wynik * 10000;
+var epstein = document.getElementById("epstein").checked;
+wynik=wynik.toFixed(2);
+if(epstein)
+{
+wynik=wynik-1;
+}
+if(wynik<18)
+{
+alert("masz niedowagę bmi:"+ wynik);
+}
+else if(wynik<23)
+{
+alert("masz prawidłowa wagę bmi:"+ wynik);
+}
+else
+{
+alert ("masz nadwagę bmi:" + wynik);
+}
+}
+}
+</script>
+<form name="Form">
+wzrost cm=<input type="Text" name="wzrost"><br>
+waga=<input type="Text" name="waga"><br>
+<input type="checkbox" id="epstein" name="epstein_island">
+<label for="epstein">Czy byłeś na wyspie Epsteina? (zmienia bmi o -1)</label><br>
+<input type="Button" value="oblicz mojom wage" onclick="bmi()">
+
+</form>
+<hr>
+<div class="tenor-gif-embed" data-postid="405083941180536765" data-share-method="host" data-aspect-ratio="0.807229" data-width="10%"><a href="https://tenor.com/view/epstein-jeffrey-epstein-j-jeffrey-sigma-gif-405083941180536765">Epstein Jeffrey Epstein GIF</a>from <a href="https://tenor.com/search/epstein-gifs">Epstein GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<script language="JavaScript">
+</script>
+
+
+
+</body>
+</html>
